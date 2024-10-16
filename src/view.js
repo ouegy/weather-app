@@ -2,19 +2,18 @@ import { weather } from "./weather";
 
 const view = (() => {
     function loadView() {
-        console.log("load view");
         const location = getLocation();
-        console.log(
-            weather.getLocationData(location).then((data) => {
-                console.log("display data method");
-                const title = document.querySelector("h1#title");
-                title.textContent = data.resolvedAddress;
-            })
-        );
+        weather.getLocationData(location).then((data) => {
+            displayData(data);
+        });
     }
     function getLocation() {
         const location = document.querySelector("input.location").value;
         return location;
+    }
+    function displayData(data) {
+        const title = document.querySelector("h1#title");
+        title.textContent = data.currentConditions.temp;
     }
 
     return { loadView };
