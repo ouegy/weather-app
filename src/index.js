@@ -1,8 +1,7 @@
 import "./styles.css";
-import { weather } from "./weather";
 import { view } from "./view";
+import { weather } from "./weather";
 
 document.addEventListener("DOMContentLoaded", () => {
     view.loadView();
-    weather.getData();
 });
