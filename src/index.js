@@ -1,7 +1,7 @@
 import "./styles.css";
 import { view } from "./view";
-import { weather } from "./weather";
+//import { weather } from "./weather";
 
 document.addEventListener("DOMContentLoaded", () => {
-    view.loadView();
+    view.buildView();
 });
