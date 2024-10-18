@@ -16,6 +16,7 @@ const weather = (() => {
                 const data = {
                     temp: json.currentConditions.temp,
                     address: json.resolvedAddress,
+                    icon: json.currentConditions.icon,
                     days: json.days,
                 };
                 return data;

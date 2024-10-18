@@ -3,5 +3,5 @@ import { view } from "./view";
 //import { weather } from "./weather";
 
 document.addEventListener("DOMContentLoaded", () => {
-    view.buildView();
+    view.buildViews();
 });

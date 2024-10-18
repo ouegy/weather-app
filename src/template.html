@@ -5,30 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 </head>
-<!-- <body>
-    <div id="main">
-        <input type="text" class="location" value="london">
-        <button id="search">Search</button>
-        <h1 id="title"></h1>
-        <p id="temp"></p>
-        <p id="desc"></p>
-    </div>
-</body> -->
-<body>
-    <header>
-        <div class="header-container">
-            <h1>Weather App</h1>
-            <input type="text" class="location" value="london">
-            <button id="search">Search</button>
-        </div>
-    </header>
-    <div class="container">
-            <div id="content">
-                <h1 id="title"></h1>
+                <!-- <h1 id="title"></h1>
                 <p id="temp"></p>
                 <p id="desc"></p>
-                <div class="icon"></div>
+                <div class="icon"></div> -->
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <input type="text" class="location" value="london">
+                <button id="search">Search</button>
             </div>
+        </header>
+        <div id="content">
+            <div id="today" class="box-shadow card">
+                <h1>Today</h1>
+                <h2 id="temp"></h2>
+                <h3 id="desc"></h3>
+                <img id="icon" src="#">
+            </div>
+            <div id="location" class="box-shadow card">
+                <h1 id="title"></h1>
+            </div>
+            <div id="week" class="box-shadow card">
+                <h1>Weekly</h1>
+            </div>
+            <div id="hourly" class="box-shadow card">
+                <h1>Hourly</h1>
+            </div>
+        </div>
     </div>
 </body>
 </html>
