@@ -14,22 +14,36 @@
     <div class="container">
         <header>
             <div class="header-container">
-                <input type="text" class="location" value="london">
-                <button id="search">Search</button>
+                <!-- <input type="text" class="location" value="london">
+                <button id="search">Search</button> -->
+                <form id="search-form">
+                    <button name="search-button" id="search-button" class="clickable"></button>
+                    <input type="text" value="London" placeholder="search" class="location" id="search" for="search">
+                </form>
             </div>
         </header>
         <div id="content">
             <div id="today" class="box-shadow card">
-                <h1>Today</h1>
-                <h2 id="temp"></h2>
-                <h3 id="desc"></h3>
-                <img id="icon" src="#">
+                <div class="header-data">
+                    <h1 id="date"></h1><img id="icon" src="#">
+                    <h3 id="conditions"></h3>
+                </div>
+                <div class="temp">
+                    <h1 id="temp"></h1>
+                </div>
+                <div class="icon">
+                    
+                </div>
+                <div class="footer-data">
+                    <h3 id="max"></h3>
+                    <h3 id="min"></h3>
+                </div>    
             </div>
             <div id="location" class="box-shadow card">
                 <h1 id="title"></h1>
+                <p id="desc"></p>
             </div>
             <div id="week" class="box-shadow card">
-                <h1>Weekly</h1>
             </div>
             <div id="hourly" class="box-shadow card">
                 <h1>Hourly</h1>
