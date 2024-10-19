@@ -36,7 +36,6 @@ const view = (() => {
         const icon = data.icon;
         const src = getImage(images, icon);
 
-        //console.log(src);
         date.textContent = "Today";
         title.textContent = data.address;
         temp.textContent = data.days[0].temp + " °F";
@@ -49,7 +48,6 @@ const view = (() => {
     }
     function createWeekView(days, number) {
         const result = days.slice(1, number);
-        console.log(result);
         const week = document.querySelector("#week");
         week.replaceChildren();
 
@@ -72,14 +70,11 @@ const view = (() => {
             div.appendChild(temp);
             week.appendChild(div);
         });
-        console.log(week);
         return week;
     }
     function createHourlyView(days) {
-        console.log(days);
         let result = days[0]["hours"];
-        result = result.slice(6, 24);
-        console.log(result);
+        result = result.slice(4, 24);
         const hourly = document.querySelector("#hourly");
         hourly.replaceChildren();
 
@@ -130,14 +125,10 @@ const view = (() => {
 
 view.addGlobalEventListener("click", "#search-button", (e) => {
     e.preventDefault();
-    let input = document.querySelector("input.location").value;
-    console.log(input);
     view.buildViews();
 });
 
 view.addGlobalEventListener("keyup", "#search", (e) => {
-    let input = document.querySelector("input.location").value;
-    console.log(input);
     if (e.keyCode === 13) view.buildViews();
 });
 

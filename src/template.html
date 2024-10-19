@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-</head>
-                <!-- <h1 id="title"></h1>
-                <p id="temp"></p>
-                <p id="desc"></p>
-                <div class="icon"></div> -->
-<body>
-    
-    <div class="container">
-        <header>
-            <div class="header-container">
-                <!-- <input type="text" class="location" value="london">
-                <button id="search">Search</button> -->
-                <form id="search-form">
-                    <button name="search-button" id="search-button" class="clickable"></button>
-                    <input type="text" value="London" placeholder="search" class="location" id="search" for="search">
-                </form>
-            </div>
-        </header>
-        <div id="content">
-            <div id="today" class="box-shadow card">
-                <div class="header-data">
-                    <h1 id="date"></h1><img id="icon" src="#">
-                    <h3 id="conditions"></h3>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-container">
+                    <form id="search-form">
+                        <button
+                            name="search-button"
+                            id="search-button"
+                            class="clickable"
+                        ></button>
+                        <input
+                            type="text"
+                            value="London"
+                            placeholder="search"
+                            class="location"
+                            id="search"
+                            for="search"
+                        />
+                    </form>
                 </div>
-                <div class="temp">
-                    <h1 id="temp"></h1>
+            </header>
+            <div id="content">
+                <div id="today" class="box-shadow card">
+                    <div class="header-data">
+                        <h1 id="date"></h1>
+                        <img id="icon" src="#" />
+                        <h3 id="conditions"></h3>
+                    </div>
+                    <div class="temp">
+                        <h1 id="temp"></h1>
+                    </div>
+                    <div class="icon"></div>
+                    <div class="footer-data">
+                        <h3 id="max"></h3>
+                        <h3 id="min"></h3>
+                    </div>
                 </div>
-                <div class="icon">
-                    
+                <div id="location" class="box-shadow card">
+                    <h1 id="title"></h1>
+                    <p id="desc"></p>
                 </div>
-                <div class="footer-data">
-                    <h3 id="max"></h3>
-                    <h3 id="min"></h3>
-                </div>    
-            </div>
-            <div id="location" class="box-shadow card">
-                <h1 id="title"></h1>
-                <p id="desc"></p>
-            </div>
-            <div id="week" class="box-shadow card">
-            </div>
-            <div id="hourly" class="box-shadow card">
-                <h1>Hourly</h1>
+                <div id="week" class="box-shadow card"></div>
+                <div id="hourly" class="box-shadow card">
+                    <h1>Hourly</h1>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
