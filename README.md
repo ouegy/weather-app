@@ -1,9 +1,9 @@
 # The Odin Project JavaScript
 
-![To Do Home](./src/images/mountain-background.png);
+![To Do Home](./src/images/mountain-background.png)
 
 ## Project: Weather App
 
 A weather app using Visual Crossing API
 
-🔗 **Live preview** of the project is
+🔗 **Live preview** of the project is [a here]()
