@@ -6,4 +6,4 @@
 
 A weather app using Visual Crossing API
 
-🔗 **Live preview** of the project is [a here]()
+🔗 **Live preview** of the project is [a here](https://ouegy.github.io/weather-app/)
